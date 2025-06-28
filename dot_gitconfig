@@ -1,0 +1,14 @@
+[credential]
+	helper = "!f() { /home/froeht/.vscode-server/bin/dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/node /tmp/vscode-remote-containers-7758a63b-9f37-456e-bd5f-ac00e098aeef.js git-credential-helper $*; }; f"
+[safe]
+	directory = /home/froeht/Code
+	directory = /home/froeht/Code/DisPinMap
+[user]
+	name = Tim Froehlich
+	email = timothyfroehlich@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
