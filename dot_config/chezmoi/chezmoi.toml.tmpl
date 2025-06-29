@@ -1,0 +1,27 @@
+[git]
+    autoCommit = true
+    autoPush = true
+
+[data]
+    email = "timothyfroehlich@gmail.com"
+    name = "Tim Froehlich"
+
+[diff]
+    pager = "delta"
+
+[merge]
+    tool = "vimdiff"
+
+{{- if eq .chezmoi.osRelease.id "bazzite" }}
+[edit]
+    command = "flatpak run com.visualstudio.code"
+
+[cd]
+    command = "flatpak run com.visualstudio.code"
+{{- else }}
+[edit]
+    command = "vim"
+
+[cd]
+    command = "vim"
+{{- end }}
