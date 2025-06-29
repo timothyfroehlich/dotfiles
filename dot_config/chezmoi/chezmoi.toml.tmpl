@@ -27,7 +27,8 @@ encryption = "age"
 # This is the corrected section for other systems
 [merge]
     command = "code"
-    args = ["--wait", "--merge", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
+    # The template variables below MUST be inside double quotes
+    args = ["--wait", "--merge", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}`}}", "{{`{{ .Target }}`}}"]
 [edit]
     command = "vim"
 [cd]
