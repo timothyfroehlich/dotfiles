@@ -1,7 +1,7 @@
 encryption = "age"
 
 [age]
-    identity = "/home/froeht/.config/chezmoi/key.txt"
+    identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
     recipient = "age1rc6f9p347gzycd0yur66hxxpgtggr3kyerf4ljzrzl34g00yqcmqx3da5w"
 
 [git]
@@ -20,17 +20,14 @@ encryption = "age"
     command = "vimdiff"
 [edit]
     command = "flatpak run com.visualstudio.code"
-[cd]
-    command = "flatpak run com.visualstudio.code"
 
 {{- else }}
+
 # This is the corrected section for other systems
 [merge]
     command = "code"
     # The template variables below MUST be inside double quotes
     args = ["--wait", "--merge", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}`}}", "{{`{{ .Target }}`}}"]
 [edit]
-    command = "vim"
-[cd]
     command = "vim"
 {{- end }}
