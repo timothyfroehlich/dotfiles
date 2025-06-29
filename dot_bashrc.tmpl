@@ -24,14 +24,24 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+############### Chezmoi Template goes here
+{{- if eq .chezmoi.osRelease.id "bazzite" }}
+
+alias code='flatpak run com.visualstudio.code'
+{{- end }}
+
+############### End of Chezmoi Template
+
+
 export EDITOR=vim
 export VISUAL=vim
+
+### Various automatically-added configs
+
+alias claude=/home/froeht/.claude/local/claude
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-{{- if eq .chezmoi.osRelease.id "bazzite" }}
-
-alias code='flatpak run com.visualstudio.code'
-{{- end }}
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
