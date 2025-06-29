@@ -22,13 +22,12 @@ encryption = "age"
     command = "flatpak run com.visualstudio.code"
 [cd]
     command = "flatpak run com.visualstudio.code"
+
 {{- else }}
+# This is the corrected section for other systems
 [merge]
-    command = "bash"
-    args = [
-        "-c",
-        "cp {{ .Target }} {{ .Target }}.base && code --new-window --wait --merge {{ .Destination }} {{ .Target }} {{ .Target }}.base {{ .Source }}",
-    ]
+    command = "code"
+    args = ["--wait", "--merge", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
 [edit]
     command = "vim"
 [cd]
