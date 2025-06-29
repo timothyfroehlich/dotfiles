@@ -1,0 +1,433 @@
+{
+    "[github-actions-workflow]": {
+        "editor.tabSize": 2
+    },
+    "[kotlin]": {
+        "editor.defaultFormatter": "crdrost.ktfmt"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true
+    },
+    "[proto3]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "cSpell.userWords": [
+        "aaos",
+        "adbd",
+        "APPDATA",
+        "cmdline",
+        "codegen",
+        "Composables",
+        "designcompose",
+        "froeht",
+        "gfile",
+        "gmaven",
+        "gradlew",
+        "helloworld",
+        "imgref",
+        "Intelli",
+        "jetbrains",
+        "Jetpack",
+        "logcat",
+        "mediacompose",
+        "presubmits",
+        "Protolizable",
+        "Robo",
+        "Robolectric",
+        "Roborazzi",
+        "rustup",
+        "sdkmanager",
+        "startservice",
+        "timothyfroehlich",
+        "webservice"
+    ],
+    "cloudcode.beta.enableAICompanion": true,
+    "cloudcode.project": "aipp-internal-testing",
+    "cloudcode.updateChannel": "dogfood",
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "editor.fontWeight": "450",
+    "editor.formatOnSave": true, // generally format on save.
+    "editor.formatOnSaveMode": "modifications",
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.stickyScroll.enabled": true,
+    "editor.stickyTabStops": true,
+    "errorLens.codeLensTemplate": "$source:$severity $message",
+    "errorLens.editorHoverPartsEnabled": {
+        "buttonsEnabled": true,
+        "messageEnabled": true,
+        "sourceCodeEnabled": true
+    },
+    "errorLens.excludeBySource": [
+        "cSpell"
+    ],
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontWeight": "200",
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.statusBarMessageEnabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.kts": "kotlin"
+    },
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/.gradle/**": true,
+        "**/build/**": true,
+        "**/build/.*/**": true,
+        "**/build/intermediates/**": true,
+        "**/build/kspCaches/**": true,
+        "**/target/**": true
+    },
+    "git.autoRepositoryDetection": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.mergeEditor": true,
+    "git.pullBeforeCheckout": true,
+    "github.branchProtection": true,
+    "githubIssues.issueBranchTitle": "wb/froeht/${issueNumber}-${sanitizedIssueTitle}",
+    "githubIssues.queries": [
+        {
+            "groupBy": [
+                "milestone"
+            ],
+            "label": "My Issues",
+            "query": "is:open assignee:${user} repo:${owner}/${repository}"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "githubPullRequests.assignCreated": "${user}",
+    "githubPullRequests.defaultCommentType": "review",
+    "githubPullRequests.defaultCreateOption": "createAutoMerge",
+    "githubPullRequests.defaultDeletionMethod.selectLocalBranch": false,
+    "githubPullRequests.defaultMergeMethod": "squash",
+    "githubPullRequests.focusedMode": false,
+    "githubPullRequests.notifications": "pullRequests",
+    "githubPullRequests.pullBranch": "never",
+    "githubPullRequests.pullRequestDescription": "commit",
+    "githubPullRequests.pushBranch": "always",
+    "githubPullRequests.queries": [
+        {
+            "label": "Local Pull Request Branches",
+            "query": "default"
+        },
+        {
+            "label": "Dependabot",
+            "query": "repo:${owner}/${repository} is:pr is:open -dependabot"
+        },
+        {
+            "label": "Waiting For My Review",
+            "query": "repo:${owner}/${repository} is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "repo:${owner}/${repository} is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "repo:${owner}/${repository} is:open author:${user}"
+        },
+        {
+            "label": "All Open",
+            "query": "default"
+        }
+    ],
+    "githubPullRequests.quickDiff": true,
+    "githubPullRequests.showPullRequestNumberInTree": true,
+    "gitlens.advanced.messages": {
+        "suppressCreatePullRequestPrompt": true
+    },
+    "gitlens.launchpad.ignoredRepositories": [
+        "timothyfroehlich/automotive-design-compose"
+    ],
+    "gitlens.launchpad.indicator.icon": "group",
+    "gitlens.launchpad.indicator.useColors": true,
+    "gitlens.launchpad.staleThreshold": 15,
+    "gitlens.remotes": [
+        {
+            "name": "Git on Borg",
+            "protocol": "https",
+            "regex": "sso:\\/\\/()(.*)",
+            "type": "Custom",
+            "urls": {
+                "branch": "http://cs/${repoBase}/${repo}/",
+                "branches": "http://cs/${repoBase}/${repo}/",
+                "commit": "https://${repoBase}-review.googlesource.com/q/${id}",
+                "file": "http://cs/${repoBase}/${repo}/${file}",
+                "fileInBranch": "http://cs/${repoBase}/${repo}/${file}",
+                "fileInCommit": "http://cs/${repoBase}/${repo}/${file};l=${line}",
+                "fileLine": "${line}",
+                "fileRange": "${start}-${end}",
+                "repository": "http://cs/${repoBase}/${repoPath}/"
+            }
+        }
+    ],
+    "gitlens.views.branches.files.layout": "tree",
+    "gitlens.views.branches.showBranchComparison": false,
+    "gitlens.worktrees.promptForLocation": false,
+    "gradle.autoDetect": "off",
+    // "ktfmt.java-runtime": "/usr/local/google/home/froeht/opt/android-studio-canary/jbr",
+    // "java.jdt.ls.java.home": "/usr/local/google/home/froeht/opt/android-studio-canary/jbr",
+    // "java.configuration.runtimes": [
+    //     {
+    //         "default": true,
+    //         "name": "JavaSE-17",
+    //         "path": "/usr/lib/jvm/java-17-openjdk-amd64"
+    //     }
+    // ],
+    "java.gradle.buildServer.enabled": "on",
+    "java.imports.gradle.wrapper.checksums": [
+        {
+            "allowed": false,
+            "sha256": "e2b82129ab64751fd40437007bd2f7f2afb3c6e41a9198e628650b22d5824a14"
+        },
+        {
+            "sha256": "66008236d4dd3eb81bf343b12a95350142ad85c996945ff2cbfdb14bde432498",
+            "allowed": false
+        },
+        {
+            "sha256": "683c84e09ad53777228f43b0b54b421c1d83b15df7fd6f7e3567a1a8f1d6a76c",
+            "allowed": false
+        },
+        {
+            "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172",
+            "allowed": true
+        }
+    ],
+    // "ktfmt.path-to-jar": "",
+    "markdownlint.config": {
+        "MD037": false,
+        "MD052": false,
+        "line-length": {
+            "line_length": 100
+        },
+        "no-inline-html": false,
+        "single-h1": false
+    },
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "protoc": {
+        // "compile_on_save": true,
+        "options": [
+            "--proto_path=${workspaceRoot}",
+            "--proto_path=${workspaceRoot}/proto",
+            "--java_out=${workspaceRoot}/build/protogen",
+            "--kotlin_out=${workspaceRoot}/build/protogen"
+        ]
+    },
+    "redhat.telemetry.enabled": false,
+    "remote.SSH.connectTimeout": 60,
+    "remote.SSH.remotePlatform": {
+        "desktop": "linux",
+        "xlarge": "linux",
+        "cloudtop": "linux"
+    },
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "rust-analyzer.assist.expressionFillDefault": "default",
+    "rust-analyzer.cargo.allTargets": false,
+    "rust-analyzer.cargo.features": null,
+    "rust-analyzer.completion.fullFunctionSignatures.enable": true,
+    "rust-analyzer.completion.privateEditable.enable": true,
+    "rust-analyzer.debug.openDebugPane": true,
+    "rust-analyzer.diagnostics.enable": false,
+    "rust-analyzer.diagnostics.styleLints.enable": true,
+    "rust-analyzer.imports.granularity.enforce": true,
+    "rust-analyzer.imports.merge.glob": false,
+    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+    "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
+    "rust-analyzer.inlayHints.closureStyle": "rust_analyzer",
+    "rust-analyzer.inlayHints.discriminantHints.enable": "fieldless",
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.interpret.tests": true,
+    "rust-analyzer.lens.references.adt.enable": true,
+    "rust-analyzer.lens.references.enumVariant.enable": true,
+    "rust-analyzer.lens.references.method.enable": true,
+    "rust-analyzer.lens.references.trait.enable": true,
+    "rust-analyzer.restartServerOnConfigChange": true,
+    "rust-analyzer.statusBar.clickAction": "stopServer",
+    "rust-analyzer.testExplorer": true,
+    "search.exclude": {
+        "**/_site": true
+    },
+    "search.mode": "reuseEditor",
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "settingsSync.ignoredExtensions": [
+        "ms-vscode-remote.remote-wsl",
+        "zhuangtongfa.material-theme"
+    ],
+    "spotlessGradle.format.enable": true,
+    "sshfs.configs": [
+        {
+            "name": "unnamed"
+        }
+    ],
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.localEchoStyle": "dim",
+    "terminal.integrated.middleClickBehavior": "paste",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "icon": "terminal-bash",
+            "path": "bash"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "pwsh": {
+            "icon": "terminal-powershell",
+            "path": "pwsh"
+        },
+        "tmux": {
+            "icon": "terminal-tmux",
+            "path": "tmux"
+        },
+        "zsh": {
+            "path": "zsh"
+        }
+    },
+    "terminal.integrated.shellIntegration.suggestEnabled": true,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "terminal.integrated.stickyScroll.maxLineCount": 2,
+    "terminal.integrated.tabs.description": "${local}${separator}${cwdFolder}",
+    "terminal.integrated.tabs.title": "${task}${separator}${cwdFolder}",
+    "update.mode": "start",
+    "vim.camelCaseMotion.enable": true,
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.highlightedyank.enable": true,
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "window.autoDetectColorScheme": true,
+    "window.commandCenter": true,
+    "window.confirmSaveUntitledWorkspace": false,
+    "window.newWindowDimensions": "offset",
+    "window.openWithoutArgumentsInNewWindow": "on",
+    "window.title": "${remoteName}${separator}${rootNameShort}${separator}${dirty}${activeEditorShort}${separator}${profileName}${separator}${appName}",
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.wrapTabs": true,
+    "workbench.fontAliasing": "auto",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.type": "toggles",
+    "workbench.list.smoothScrolling": true,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "cloudcode.autoDependencies": "off",
+    "ktfmt.path-to-jar": "/usr/local/bin/ktfmt",
+    "vim.sneak": true,
+    "vim.cursorStylePerMode.insert": "line-thin",
+    "vim.cursorStylePerMode.replace": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "Notes.notesLocation": "/Users/froeht/Documents/code-notes",
+    "git.terminalGitEditor": true,
+    "git.pruneOnFetch": true,
+    "git.inputValidation": true,
+    "git.branchSortOrder": "alphabetically",
+    "git.branchPrefix": "wb/froeht/",
+    "git.autoStash": true,
+    "git.allowForcePush": true,
+    "gitlens.ai.experimental.gemini.model": "gemini-1.5-pro-latest",
+    "gitlens.views.workspaces.compact": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.initialHint": true,
+    "terminal.integrated.localEchoEnabled": "on",
+    "errorLens.codeLensEnabled": true,
+    "errorLens.delayMode": "debounce",
+    "errorLens.delay": 50,
+    "errorLens.followCursor": "closestProblemMultiline",
+    "errorLens.followCursorMore": 3,
+    "errorLens.onSave": true,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.statusBarCommand": "goToLine",
+    "errorLens.statusBarIconsEnabled": true,
+    "errorLens.statusBarMessageType": "closestSeverity",
+    "cloudcode.enableGkeAutopilotSupport": false,
+    "cloudcode.enableTelemetry": false,
+    "cloudcode.yaml.clusterResourceCompletion": false,
+    "cloudcode.yaml.enableKubernetesSupport": false,
+    "cloudcode.yaml.format.bracketSpacing": false,
+    "workbench.colorTheme": "Gruvbox Light Soft",
+    "workbench.preferredLightColorTheme": "Gruvbox Dark Hard",
+    "workbench.settings.applyToAllProfiles": [
+        "shellcheck.useWorkspaceRootAsCwd",
+        "shellcheck.exclude"
+    ],
+    "shellcheck.exclude": [
+        "2250"
+    ],
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "geminicodeassist.project": "aipp-internal-testing",
+    "geminicodeassist.updateChannel": "dogfood",
+    "diffEditor.codeLens": true,
+    "geminicodeassist.recitation.maxCitedLength": 0,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-24.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-24.04"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "terminal.integrated.automationProfile.linux": {
+
+    },
+    "dev.containers.dockerPath": "podman",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 120,
+    "prettier.proseWrap": "always",
+    "chat.commandCenter.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true
+}
