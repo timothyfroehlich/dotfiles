@@ -1,3 +1,9 @@
+encryption = "age"
+
+[age]
+    identity = "/home/froeht/.config/chezmoi/key.txt"
+    recipient = "age1rc6f9p347gzycd0yur66hxxpgtggr3kyerf4ljzrzl34g00yqcmqx3da5w"
+
 [git]
     autoCommit = true
     autoPush = true
@@ -9,19 +15,22 @@
 [diff]
     pager = "delta"
 
-[merge]
-    tool = "vimdiff"
-
 {{- if eq .chezmoi.osRelease.id "bazzite" }}
+[merge]
+    command = "vimdiff"
 [edit]
     command = "flatpak run com.visualstudio.code"
-
 [cd]
     command = "flatpak run com.visualstudio.code"
 {{- else }}
+[merge]
+    command = "bash"
+    args = [
+        "-c",
+        "cp {{ .Target }} {{ .Target }}.base && code --new-window --wait --merge {{ .Destination }} {{ .Target }} {{ .Target }}.base {{ .Source }}",
+    ]
 [edit]
     command = "vim"
-
 [cd]
     command = "vim"
 {{- end }}
