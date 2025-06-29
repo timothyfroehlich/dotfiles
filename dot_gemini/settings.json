@@ -1,0 +1,11 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+  "contextFileName": [ "GEMINI.md", "CLAUDE.md" ],
+  "fileFiltering": {
+	  "respectGitIgnore": true,
+	  "enableRecursiveFileSearch": true
+	},
+	"autoAccept": true,
+	"checkpointing": true
+}
