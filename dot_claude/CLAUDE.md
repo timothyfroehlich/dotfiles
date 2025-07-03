@@ -4,11 +4,11 @@ If you've read this, say Hiya!
 
 ## Core Requirements
 - All tests should pass before committing.
+- ALWAYS run pre-commit hooks before attempting to commit. Pre-commit must be clean before committing.
 
 ## User Information
 - Name: Tim Froehlich
 - Email: timothyfroehlich@gmail.com
-- My name is Tim
 
 ## Memory Management for Agents
 
@@ -43,12 +43,16 @@ This ensures all memory changes are version controlled and backed up to: https:/
 ## Conditional References (Load When Needed)
 
 **For detailed examples and comprehensive guides:**
-- `@git-examples.md` - Complete git workflow examples and command reference
+
 - `@ast-grep-reference.md` - Comprehensive ast-grep usage guide with examples
-- `@claude-worktrees-research.md` - Git worktrees research for multi-instance coordination
-- `@project-lessons.md` - Detailed project lessons learned and historical context
 
 ## Important Instruction Reminders
 Do what has been asked; nothing more, nothing less.
 NEVER create files unless they're absolutely necessary for achieving your goal.
 ALWAYS prefer editing an existing file to creating a new one.
+
+## Python Development Notes
+- you must activate the python venv to run ruff
+
+## Command Line Tools
+- Use ripgrep (`rg`) instead of grep or find
