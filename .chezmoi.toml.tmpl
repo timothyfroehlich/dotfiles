@@ -1,7 +1,7 @@
 encryption = "age"
 
 [age]
-    identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
+    identity = "/home/froeht/.config/chezmoi/key.txt"
     recipient = "age1rc6f9p347gzycd0yur66hxxpgtggr3kyerf4ljzrzl34g00yqcmqx3da5w"
 
 [git]
@@ -14,3 +14,9 @@ encryption = "age"
 
 [diff]
     pager = "delta"
+
+# This is the corrected section for other systems
+[merge]
+[edit]
+    command = "code"
+    args = ["--wait"]
