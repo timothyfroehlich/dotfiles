@@ -14,3 +14,7 @@ encryption = "age"
 
 [diff]
     pager = "delta"
+
+[merge]
+    command = "code"
+    args = ["--wait", "--merge", "{{`{{`}} .Destination {{`}}`}}", "{{`{{`}} .Source {{`}}`}}", "{{`{{`}} .Base {{`}}`}}", "{{`{{`}} .Target {{`}}`}}"]
