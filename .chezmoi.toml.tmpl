@@ -15,8 +15,10 @@ encryption = "age"
 [diff]
     pager = "delta"
 
-# This is the corrected section for other systems
 [merge]
+    command = "code"
+    args = ["--wait", "--merge", "{{`{{`}} .Destination {{`}}`}}", "{{`{{`}} .Source {{`}}`}}", "{{`{{`}} .Base {{`}}`}}", "{{`{{`}} .Target {{`}}`}}"]
+
 [edit]
     command = "code"
     args = ["--wait"]
