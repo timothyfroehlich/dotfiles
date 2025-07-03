@@ -25,16 +25,14 @@ fi
 unset rc
 
 ############### Chezmoi Template goes here
-{{- if eq .chezmoi.osRelease.id "bazzite" }}
-
-alias code='flatpak run com.visualstudio.code'
-{{- end }}
 
 ############### End of Chezmoi Template
 
+source ~/.env
 
 export EDITOR=vim
 export VISUAL=vim
+alias cm=chezmoi
 
 ### Various automatically-added configs
 
