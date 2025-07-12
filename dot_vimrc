@@ -1,0 +1,5 @@
+" Vim merge helpers for chezmoi/git conflicts
+" Quick diffget aliases for 3-way merges
+command! Dgl diffget 1  " Get from left pane
+command! Dgr diffget 3  " Get from right pane
+command! Dgm diffget 2  " Get from middle pane (if needed)
