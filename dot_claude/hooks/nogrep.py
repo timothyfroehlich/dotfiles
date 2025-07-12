@@ -35,7 +35,7 @@ tool_input = input_data.get("tool_input", {})
 command = tool_input.get("command", "")
 
 if tool_name != "Bash" or not command:
-    sys.exit(1)
+    sys.exit(0)  # Not our concern, exit gracefully
 
 # Validate the command
 issues = validate_command(command)
