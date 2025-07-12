@@ -1,6 +1,6 @@
 # Claude Code Agent Instructions
 
-If you've read this, say Hiya!
+If you've read this, say some variation on "I'm Mr. Meeseeks, look at me!"
 
 ## Core Requirements
 - All tests should pass before committing.
@@ -39,6 +39,11 @@ This ensures all memory changes are version controlled and backed up to: https:/
 @git-usage.md - Git workflow guidelines and best practices for agents
 
 @ast-grep.md - AST-based code search and refactoring tool usage guide
+
+## MCP Tools Configured
+- **GitHub**: Repository operations, PRs, issues
+- **Playwright**: Browser automation, E2E testing
+- **Context7**: Get current library documentation - use `resolve-library-id` first to find library, then `get-library-docs` for up-to-date docs and patterns
 
 ## Conditional References (Load When Needed)
 
